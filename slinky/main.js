@@ -1,4 +1,4 @@
-// fork of https://www.openprocessing.org/sketch/135387
+// Fork https://www.openprocessing.org/sketch/135387
 
 const randomColor = () => [random(255), random(255), random(255)];
 let strokeColor;
@@ -13,6 +13,7 @@ function setup() {
 
 function draw() {
   stroke(frameCount % strokeColor[0], ...strokeColor.slice(1), 11);
+  strokeWeight(0.7);
   translate(width / 2, height / 2);
 
   beginShape();
